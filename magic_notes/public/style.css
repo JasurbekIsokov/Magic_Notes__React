@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#root {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.kunTun {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title span {
+  color: rgb(4, 207, 88);
+}
+
+.kuntun {
+  height: 25px;
+  padding: 2.5px 4px;
+  font-size: 10.72px;
+  border: 2px solid rgb(4, 207, 88);
+
+  border-radius: 20px;
+}
+
+/* Search  Component */
+
+.searchBox {
+  width: 100%;
+  padding: 2%;
+  border: 3px solid rgb(4, 207, 88);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 232, 232);
+}
+
+.search {
+  padding: 1% 0;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1% 0;
+  border: none;
+  outline: none;
+  background-color: rgb(235, 232, 232);
+}
+
+/* /Search  Component */
+
+/* CardComponent */
+
+.cardContainer {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 17.7rem;
+  border-radius: 8px;
+  background-color: rgb(3, 156, 67);
+  padding: 8px;
+}
+
+.topCard textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+}
