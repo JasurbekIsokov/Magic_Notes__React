@@ -14,7 +14,7 @@ class CardComponent extends React.Component {
             <textarea className="inputText"></textarea>
           </div>
           <div className="bottomCard">
-            <p className="">
+            <p className="number">
               <span className="number">123 </span> Remaining
             </p>
             <button className="btnSave">Save</button>
@@ -26,4 +26,3 @@ class CardComponent extends React.Component {
 }
 
 export default CardComponent;
-  

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import SearchComponent from "./SearchComponent.js";
 import CardComponent from "./CardComponent.js";
+import SaveCardComponent from "./SaveCardComponent.js";
 
 class KunTunComponent extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class KunTunComponent extends React.Component {
         </div>
         <SearchComponent />
         <CardComponent />
+        <SaveCardComponent />
       </div>
     );
   }
