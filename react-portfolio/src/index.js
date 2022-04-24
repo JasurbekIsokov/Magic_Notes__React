@@ -6,6 +6,7 @@ import HeaderComponent from "./HeaderComponent.js";
 import ReturnComponent from "./homePage/ReturnComponent.js";
 import ReturnPortfolioComponent from "./portfolioPage/ReturnPortfolioComponent.js";
 import AboutRenderComponent from "./aboutPage/AboutRenderComponent.js";
+import ContactRenderComponent from "./contactPage/ContactRenderComponent.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -18,7 +19,8 @@ class App extends React.Component {
         <SaidbarComponent />
         <div className="container">{/* <ReturnComponent /> */}</div>
         {/* <ReturnPortfolioComponent /> */}
-        <AboutRenderComponent />
+        {/* <AboutRenderComponent /> */}
+        <ContactRenderComponent />
       </div>
     );
   }

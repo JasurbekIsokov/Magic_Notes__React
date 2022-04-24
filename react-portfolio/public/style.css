@@ -153,7 +153,8 @@
 /* Pportfolio Page */
 
 .portfolio,
-.about {
+.about,
+.contact {
   width: 90%;
   margin-top: 50px;
   position: relative;
@@ -161,12 +162,14 @@
 }
 
 .title_portfolio,
-.about_title {
+.about_title,
+.contact_title {
   font-size: 32px;
 }
 
 .title_portfolio hr,
-.about_title hr {
+.about_title hr,
+.contact_title hr {
   width: 50%;
   margin: 15px 0;
 }
@@ -198,7 +201,8 @@
 /* About Page */
 
 .myself,
-.work_tmline {
+.work_tmline,
+.contact_flex {
   display: flex;
   justify-content: space-between;
 }
@@ -213,7 +217,7 @@
 }
 
 .work_tmline {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .list {
@@ -228,3 +232,55 @@
 }
 
 /* /About Page */
+
+/* Conatact page */
+
+.contact_left,
+.contact_right {
+  width: 50%;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.contact_left p:last-child {
+  margin-right: 20px;
+}
+
+.touch {
+  font-size: 18.72px;
+  margin-bottom: 25px;
+}
+
+.contact_left p:nth-child(3) {
+  margin: 15px auto;
+}
+
+.name,
+.email {
+  width: 48%;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.name {
+  margin-right: 15px;
+}
+
+.message {
+  width: 100%;
+  margin-top: 10px;
+  height: 120px;
+  resize: none;
+  padding: 5px;
+  outline: none;
+}
+
+.send {
+  padding: 2.5px 10px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+/* /Contact page */
