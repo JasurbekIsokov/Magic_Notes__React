@@ -5,26 +5,6 @@ class MainComponent extends React.Component {
     return (
       <div className="main-section">
         <div className="left-main">
-          <div className="follow-link">
-            <br />
-            <br />
-            <i className="twitter icon" />
-            <br />
-            <br />
-            <i className="github icon" />
-            <br />
-            <br />
-            <i className="facebook f icon" />
-            <br />
-            <br />
-            <i className="linkedin icon" />
-            <br />
-            <br />
-            <i className="youtube icon" />
-
-            <div className="vertical-line"></div>
-            <p className="follow-me">Follow Me</p>
-          </div>
           <div className="text-main">
             <p className="h2">I'm Plux Doe</p>
             <p className="h2">I FrontEnd developer</p>

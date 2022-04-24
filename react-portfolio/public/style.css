@@ -5,16 +5,31 @@
   box-sizing: border-box;
 }
 
+/* Window */
+
+.window {
+  width: 100vw;
+  padding: 10px;
+}
+
+/* /Window */
+
+/* .container {
+  width: 90%;
+} */
+
 /*  Home Page  */
 
 /* HeaderComponent */
 
 .header {
-  width: 100vw;
+  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  position: fixed;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -38,24 +53,13 @@
 
 /* /HeaderComponent */
 
-/* MAin section */
-
-.main-section {
-  display: flex;
-  justify-self: space-between;
-}
-
-.left-main {
-  width: 50%;
-  height: 100%;
-  padding: 2%;
-  display: flex;
-  align-items: center;
-}
+/* Saidbar Component */
 
 .follow-link {
+  margin-top: 50px;
   width: 30px;
   font-size: 12px;
+  position: fixed;
 }
 
 .vertical-line {
@@ -69,6 +73,24 @@
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: #000;
+}
+
+/* /Saidbar component */
+
+/* MAin section */
+
+.main-section {
+  display: flex;
+  justify-self: space-between;
+  margin-top: 50px;
+}
+
+.left-main {
+  width: 50%;
+  height: 100%;
+  padding: 2%;
+  display: flex;
+  align-items: center;
 }
 
 .text-main {
@@ -127,3 +149,48 @@
 /* /Main section */
 
 /*  /Home Page  */
+
+/* Pportfolio Page */
+
+.portfolio,
+.about {
+  width: 90%;
+  margin-top: 50px;
+  position: relative;
+  left: 7%;
+}
+
+.title_portfolio,
+.about_title {
+  font-size: 32px;
+}
+
+.title_portfolio hr,
+.about_title hr {
+  width: 50%;
+  margin: 15px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  height: 200px;
+  background-image: url(hacker.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transition: all 0.5s;
+  box-shadow: 0px 2px 6px red;
+  transform: scale(1.01);
+  border-radius: 0;
+}
+/* Portfolio Page */
