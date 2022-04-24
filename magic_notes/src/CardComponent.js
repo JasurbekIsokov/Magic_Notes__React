@@ -1,28 +1,40 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// import React, { Component } from "react";
 
-class CardComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+// class CardComponent extends Component {
+//   state = {
+//     text: "dsdsdfs",
+//   };
+//   saveHandler = (e) => {
+//     e.preventDefault();
+//     const { text } = this.state;
+//     let obj = {
+//       text: text,
+//     };
+//     this.props.setData();
+//     console.log(text);
+//   };
+//   render() {
+//     return (
+//       <div className="cardContainer">
+//         <form className="card" onSubmit={this.saveHandler}>
+//           <div className="topCard">
+//             <textarea
+//               className="inputText"
+//               onChange={(e) => this.setState({ text: e.target.value })}
+//             ></textarea>
+//           </div>
+//           <div className="bottomCard">
+//             <p className="number">
+//               <span className="number">123 </span> Remaining
+//             </p>
+//             <button className="btnSave" type="submit">
+//               Save
+//             </button>
+//           </div>
+//         </form>
+//       </div>
+//     );
+//   }
+// }
 
-  render() {
-    return (
-      <div className="cardContainer">
-        <div className="card">
-          <div className="topCard">
-            <textarea className="inputText"></textarea>
-          </div>
-          <div className="bottomCard">
-            <p className="number">
-              <span className="number">123 </span> Remaining
-            </p>
-            <button className="btnSave">Save</button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default CardComponent;
+// export default CardComponent;
