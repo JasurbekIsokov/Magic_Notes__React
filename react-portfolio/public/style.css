@@ -197,7 +197,8 @@
 
 /* About Page */
 
-.myself {
+.myself,
+.work_tmline {
   display: flex;
   justify-content: space-between;
 }
@@ -210,4 +211,20 @@
   font-size: 13px;
   line-height: 18px;
 }
+
+.work_tmline {
+  margin-top: 50px;
+}
+
+.list {
+  width: 55%;
+}
+
+.li {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 /* /About Page */
