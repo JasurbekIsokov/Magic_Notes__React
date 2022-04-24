@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import NavbarComponent from "./homePage/NavbarComponent.js";
+
+import ReturnComponent from "./homePage/ReturnComponent.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NavbarComponent />
+        <ReturnComponent />
       </div>
     );
   }
