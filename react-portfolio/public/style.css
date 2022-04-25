@@ -192,7 +192,7 @@
 
 .card:hover {
   transition: all 0.5s;
-  box-shadow: 0px 2px 6px red;
+  box-shadow: 0px 2px 6px #555;
   transform: scale(1.01);
   border-radius: 0;
 }

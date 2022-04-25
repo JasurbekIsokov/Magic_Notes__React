@@ -17,9 +17,11 @@ class App extends React.Component {
       <div className="window">
         <HeaderComponent />
         <SaidbarComponent />
-        <div className="container">{/* <ReturnComponent /> */}</div>
-        {/* <ReturnPortfolioComponent /> */}
-        {/* <AboutRenderComponent /> */}
+        <div className="container">
+          <ReturnComponent />
+        </div>
+        <ReturnPortfolioComponent />
+        <AboutRenderComponent />
         <ContactRenderComponent />
       </div>
     );
