@@ -4,6 +4,7 @@ class SearchBar extends React.Component {
   state = { inputValue: "" };
   constructor(props) {
     super(props);
+    // this.getInputData = this.getInputData.bind(this);
   }
 
   getInputData(e) {
@@ -12,6 +13,7 @@ class SearchBar extends React.Component {
 
   formSubmit = (e) => {
     e.prevenDefault();
+    this.props.getData(this.state.inputValu);
   };
 
   render() {
