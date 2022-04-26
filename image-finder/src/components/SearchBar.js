@@ -2,20 +2,20 @@ import React from "react";
 
 class SearchBar extends React.Component {
   state = { inputValue: "" };
+
   constructor(props) {
     super(props);
     // this.getInputData = this.getInputData.bind(this);
   }
 
   getInputData(e) {
-    this.setState({ inputValu: e.target.value });
+    this.setState({ inputValue: e.target.value });
   }
 
   formSubmit = (e) => {
-    e.prevenDefault();
-    this.props.getData(this.state.inputValu);
+    e.preventDefault();
+    this.props.getIpData(this.state.inputValue);
   };
-
   render() {
     return (
       <div className="ui container" style={{ marginTop: "30px " }}>

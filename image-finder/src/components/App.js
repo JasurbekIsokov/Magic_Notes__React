@@ -6,38 +6,27 @@ import ImageList from "./ImageList";
 import SearchBar from "./SearchBar";
 
 class App extends React.Component {
-  state = { key: "" };
-
-  constructor(props) {
-    super(props);
-  }
-
-  getSearchData = (data) => {
-    this.setState({ key: data });
-    console.log(this.state.key);
-  };
-
-  componentDidUpdate() {
-    this.getIpData();
-  }
-
-  getIpData = async () => {
+  state = { arr: [] };
+  getSearchData = async (imagData) => {
     const data = await axios.get("https://api.unsplash.com/search/photos", {
       params: {
-        query: this.state.kalit,
+        query: imagData,
       },
       headers: {
         Authorization: "Client-ID fFxqUKuJS8hx3nwzRQoYiHB5URcqFjkGG-FSsZUDOb4",
       },
     });
-    console.log(data.data.results);
+
+    this.setState({ arr: data.data.results });
+    console.log(this.state.arr);
+    // console.log(data.data.results);
   };
 
   render() {
     return (
       <div>
-        <SearchBar getData={this.getSearchData} />
-        <ImageList />
+        <SearchBar getIpData={this.getSearchData} />
+        <ImageList dataImg={this.state.arr} />
       </div>
     );
   }

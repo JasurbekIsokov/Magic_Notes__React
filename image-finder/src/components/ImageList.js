@@ -1,13 +1,17 @@
 import React from "react";
 
-class ImageList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ImageList = (props) => {
+  const imageRender = () => {
+    return props.dataImg.map((val) => {
+      return (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <img src={val.urls.regular} />
+        </div>
+      );
+    });
+  };
 
-  render() {
-    return <div></div>;
-  }
-}
+  return <div>{imageRender()}</div>;
+};
 
 export default ImageList;
