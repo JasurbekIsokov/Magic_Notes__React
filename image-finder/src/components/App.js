@@ -11,6 +11,8 @@ class App extends React.Component {
     const data = await axios.get("https://api.unsplash.com/search/photos", {
       params: {
         query: imagData,
+
+        per_page: 30,
       },
       headers: {
         Authorization: "Client-ID fFxqUKuJS8hx3nwzRQoYiHB5URcqFjkGG-FSsZUDOb4",
@@ -18,8 +20,6 @@ class App extends React.Component {
     });
 
     this.setState({ arr: data.data.results });
-    console.log(this.state.arr);
-    // console.log(data.data.results);
   };
 
   render() {

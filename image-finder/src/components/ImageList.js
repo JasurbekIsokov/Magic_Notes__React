@@ -1,17 +1,15 @@
 import React from "react";
+import "../Style.css";
+import ImageCard from "./ImageCard";
 
 const ImageList = (props) => {
   const imageRender = () => {
     return props.dataImg.map((val) => {
-      return (
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <img src={val.urls.regular} />
-        </div>
-      );
+      return <ImageCard key={val.id} data={val} />;
     });
   };
 
-  return <div>{imageRender()}</div>;
+  return <div className="img-list">{imageRender()}</div>;
 };
 
 export default ImageList;
